@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>International Calling</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url()">
+
+                <div style=" width: 300px; height:500px; margin:5px auto;">
+                    
+                    <img src="img/rokmobile_logo75px.png" width:70px height: 70px style="padding-bottom: 40px; padding-top: 30px">
+                    <br>
+
+                    <h2 style="padding-bottom: 20px" id="title1" style="font-size: 22px">FREE INTERNATIONAL CALLING</h2>
+
+
+                  <p id="des1" style="padding-bottom: 20px; font-size: 14px">Your plan now comes with the following at no additional charge</p>
+                 
+                    <img style="padding-top: 10px;" src="img/swipe.png" width:50px height="50px">
+
+                </div>
+
+            </div>
+
+
+
+            <div class="swiper-slide" style="background-color:#ffe400">
+
+                <div style=" width: 300px; height:500px; margin:5px auto;">
+
+                    <img style="padding-bottom: 40px;  padding-top: 40px" src="img/480x720.slide-03.png" width:350px height="250px">
+
+                    <h3 id="title2" style="font-size: 20px">MONTHLY CALL CREDIT</h3>
+                    <p id="des2" style="font-size: 14px">Every month you’ll receive a $5 calling credit worth up 500 min of calling worldwide. Buy additional PayGo credits if you run out of funds</p>
+                </div>
+
+            </div>
+
+
+
+      
+
+            <div class="swiper-slide" style="background-color:#2ea5dc">
+                <div style=" width: 300px; height:500px; margin:5px auto;">
+
+                    <img style="padding-bottom: 60px; padding-top: 50px" src="img/480x720.slide.ILD-04.png" width:200px height="250px">
+
+                    <h3 id="title3" style="color: white; font-size: 20px">LEAVING THE COUNTRY?</h3>
+                    <p id="des3" style="color: white; font-size: 14px">If you the leave the country, use the ROK Talk app to make and receive calls over WiFi from anywhere</p>
+                
+
+                </div>
+            </div>
+
+
+
+            <div class="swiper-slide" style="background-color: white">
+                <div style=" width: 350px; height:500px; margin:5px auto;">
+
+                    <img style="padding-bottom: 20px; padding-top: 20px" src="img/480x720.slide.ILD-05.png" width:350px height="230px">
+        
+           
+                    <h3 id="title4" style="font-size: 20px">GET STARTED</h3>
+                    <p id="des4" style="font-size: 14px">Use the MyROK app to see destinations, buy PayGo credits and get the ROK Talk app 
+</p>
+
+  <span style="display: inline;">
+                      <a style="height: 18px; border-radius: 50px; font-size: 12px; " class="btn btn-primary btn-sm" href="https://goo.gl/53UzXa" role="button"><img src="img/androidicon.png" width="80" height="18"></a>
+
+                    <br>
+                    <br>
+
+                    <a style="height: 18px; border-radius: 50px; font-size: 12px; " class="btn btn-primary btn-sm" href="https://goo.gl/4pZy3u" role="button"><img src="img/appleicon.png" width="80" height="18"></a>
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <div>
+            <a href="www.rokmobile.com" </div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="js/swiper.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            
+             <!-- Title & Description 1 -->
+            
+             var userLang = navigator.language || navigator.userLanguage;
+            if (userLang == 'en-US') {
+                langCode = 0
+            } else {
+                langCode = 1;
+            }
+
+            console.log(userLang);
+
+            
+            
+            
+          var texts = [
+                [
+                    "FREE INTERNATIONAL CALLING",
+                    "LLAMADA INTERNACIONAL GRATUITA"
+                ],
+                [
+                    "Your plan now comes with the following at no additional charge",
+                    "Su plan ahora viene con lo siguiente sin cargo adicional"
+                ],
+                [
+                    "MONTHLY CALL CREDIT",
+                    "CRÉDITO DE LLAMADAS MENSUALES"
+                ],
+                [
+                    "Every month you’ll receive a $5 calling credit worth up 500 min of calling worldwide. Buy additional PayGo credits if you run out of funds",
+                    "Cada mes recibirás un crédito de llamadas de $ 5 (hasta 500 minutos) para hacer  llamadas internacionales. Compre créditos adicionales de PayGo si se queda sin fondos"
+                ],
+                [
+                    "LEAVING THE COUNTRY?",
+                    "¿VIAJANDO FUERA DEL PAÍS?"
+                ],
+                [
+                    "If you the leave the country, use the ROK Talk app to make and receive calls over WiFi from anywhere",
+                    "Si sales del país, utiliza la aplicación ROK Talk para hacer y recibir llamadas a través de WiFi desde cualquier lugar"
+                ],
+                [
+                    "GET STARTED",
+                    "EMPEZAR"
+                ],
+                [
+                    "Use the MyROK app to see destinations, buy PayGo credits and get the ROK Talk app ",
+                    
+                    "Utilice la aplicación MyROK para ver destinos, comprar créditos PayGo y obtener la aplicación ROK Talk"
+                    
+                ],
+                [
+                
+                    "GET STARTED",
+                    "EMPEZAR"
+                ],
+                [
+                    "Download the ROK TALK app to view destinations, buy PayGo minutes and make calls",
+                    
+                    "Utilice la aplicación MyROK para ver destinos, comprar créditos PayGo y obtener la aplicación ROK Talk"
+                     
+                    
+                    
+                ]
+            ];
+
+            document.getElementById("title1").innerHTML = texts[0][langCode];
+            document.getElementById("des1").innerHTML = texts[1][langCode];
+            document.getElementById("title2").innerHTML = texts[2][langCode];
+            document.getElementById("des2").innerHTML = texts[3][langCode];
+            document.getElementById("title3").innerHTML = texts[4][langCode];
+            document.getElementById("des3").innerHTML = texts[5][langCode];
+            document.getElementById("title4").innerHTML = texts[6][langCode];
+            document.getElementById("des4").innerHTML = texts[7][langCode];
+           
+
+
+            var swiper = new Swiper('.swiper-container', {
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            });
+
+        </script>
+</body>
+
+</html>
